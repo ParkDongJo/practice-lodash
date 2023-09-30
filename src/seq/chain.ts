@@ -1,5 +1,5 @@
 import _ from 'lodash'
-import {IPerson, makeRandomIPerson} from './models/person'
+import {IPerson, makeRandomIPerson} from '../models/person'
 
 // 지연평가 테스트
 
