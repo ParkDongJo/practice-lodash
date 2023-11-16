@@ -38,3 +38,17 @@ for(const s of set) {
   log(s);
 }
 
+
+const go = (...fns: any[]) => _.reduce(fns, (a, fn) => fn(a));
+
+const test = (a: any, fn: any) => {
+
+}
+test(10, (a: number) => a * a);
+
+go(
+  10,
+  (a: number) => test(a, (n: number) => n + 10),
+  (a: number) => a * a,
+  log
+)
